@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="logo.svg" alt="logo of reverb:a play button with rings circling it">
+        <h1 id="name">REVERB</h1>
+    </header>
+  <main class="player">
+    <h1 id="title">Select a track</h1>
+    <p id="artist"></p>
+    
+    <input type="range" id="progress" value="0" min="0" max="100">
+    <div class="time"><span id="current">0:00</span><span id="duration">0:00</span></div>
+    
+    <div class="controls">
+      <button id="prev">⏮</button>
+      <button id="play">▶</button>
+      <button id="next">⏭</button>
+    </div>
+
+    <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+    <ul id="playlist"></ul>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
